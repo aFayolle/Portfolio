@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+h1 { 
+    color: rgb(228, 187, 151);
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    margin: 20px auto;
+    width: 306px;
+    color: rgb(228, 187, 151);
+}
+
+body{
+    background-color: rgb(4, 31, 30);
+    border: 12px solid rgb(52,89, 149); /* Bordure de 2 pixels de large en bleu en bas de la page */
+    margin: 0;
+    padding: 0;
+}
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    cursor: pointer;
+    border: 2px solid rgb(228, 187, 151);
+}
+.cell.x {
+    color: red;
+}
+
+.cell.o {
+    color: blue;
+}
+
+.message {
+    margin: 20px auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#restartButton {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: rgb(228, 187, 151);
+    color: #555;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#vid {
+    border: 12px solid rgb(52,89, 149);
+    margin:0;
+    padding: 0;
+}
+
+#restartButton:hover {
+    background-color: rgb(114, 163, 75);
+}
+#green-circle {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(68, 255, 210);
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+    cursor: none;
+}
+#projectile {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(68, 255, 210);
+    border-radius: 50%;
+    position: absolute;
+    cursor: none;
+}

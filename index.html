@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jeu de Morpion</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+</head>
+<body onmousedown="return false" onselectstart="return false">
+    <h1>Jeu de Morpion</h1>
+    <div id="plateau" class="board" disabled>
+        <div number="0" class="cell" onclick="maFonction(this)" data-cell></div>
+        <div number="1" class="cell" onclick="maFonction(this)" data-cell></div>
+        <div number="2" class="cell" onclick="maFonction(this)" data-cell></div>
+        <div number="3" class="cell" onclick="maFonction(this)" data-cell></div>
+        <div number="4" class="cell" onclick="maFonction(this)" data-cell></div>
+        <div number="5" class="cell" onclick="maFonction(this)" data-cell></div>
+        <div number="6" class="cell" onclick="maFonction(this)" data-cell></div>
+        <div number="7" class="cell" onclick="maFonction(this)" data-cell></div>
+        <div number="8" class="cell" onclick="maFonction(this)" data-cell></div>
+    </div>
+    <div id="green-circle"></div>
+    <div id="projectile"></div>
+    <script>
+        // Fonction exécutée lorsque la page est totalement chargée
+        window.addEventListener('load', function () {
+            // Activer le bouton
+            var bouton = document.getElementById('plateau');
+            bouton.removeAttribute('disabled');
+            startGame();
+        });
+    </script>
+    <div class="message">
+        <button id="restartButton" onClick="startGame()">Reset</button>
+    </div>
+    <script src="gravity.js"></script>
+    <h1>Video de foufouuuuuu</h1>
+    <iframe id="vid" width="560" height="315" src="https://www.youtube.com/embed/JyKD2xCzGHM?si=K6M2gTkqpAuxJkPn" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <script src="script.js"></script>
+</body>
+</html>
