@@ -192,3 +192,10 @@ function getRandomInt(max) {
 const df = document.querySelectorAll('[data-cell]');
 const tab = Array(9).fill('');
 let finish=false
+window.addEventListener("load", function () {
+  // Sélectionnez l'élément de l'écran de chargement
+  var loader = document.querySelector(".loader");
+
+  // Masquez l'écran de chargement
+  loader.style.display = "none";
+});
